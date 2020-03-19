@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@architect/sandbox": "^1.5.8",
-    "@rollup/plugin-typescript": "^2.1.0",
+    "@rollup/plugin-typescript": "^4.0.0",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "cross-env": "^7.0.2",
