@@ -1,35 +1,37 @@
-import React from 'https://dev.jspm.io/react'
+import React, { Component } from "https://unpkg.com/es-react";
 
-export class App extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {date: new Date()};
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      p: any;
+    }
   }
+}
+
+type Props = {};
+
+type State = {
+  time: Date;
+};
+
+export class App extends Component<Props, State> {
+  state = {
+    time: new Date(),
+  };
 
   componentDidMount() {
-    this.timerID = setInterval(
-      () => this.tick(),
-      1000
-    );
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
+    setInterval(() => this.tick(), 1000);
   }
 
   tick() {
+    //@ts-ignore
     this.setState({
-      date: new Date()
+      time: new Date(),
     });
   }
 
   render() {
-    return (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
-      </div>
-    );
+    //@ts-ignore
+    return <p>The current time is {this.state.time.toLocaleTimeString()}</p>;
   }
 }
