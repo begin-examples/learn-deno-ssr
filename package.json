@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "SSR with Deno",
   "scripts": {
-    "test": "deno test test",
+    "_test": "deno test test",
     "lint": "deno fmt src && deno fmt test",
     "build": "mkdirp dist && deno bundle src/browser.tsx > dist/browser.js",
     "start": "npm run build && sandbox"
