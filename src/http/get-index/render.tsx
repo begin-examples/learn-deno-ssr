@@ -1,9 +1,9 @@
-import React from 'https://dev.jspm.io/react'
-import ReactDOMServer from 'https://dev.jspm.io/react-dom/server'
-import { App } from './app.tsx'
+import ReactDOMServer from "https://dev.jspm.io/react-dom/server";
+import { React } from "https://unpkg.com/es-react";
+import { App } from "./app.tsx";
 
 export async function render() {
-  let body = ReactDOMServer.renderToString(<App/>)
+  let body = ReactDOMServer.renderToString(<App />);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,5 +41,5 @@ export async function render() {
   <script type="module" src="/_static/browser.js"></script>
 </body>
 </html>
-`
+`;
 }

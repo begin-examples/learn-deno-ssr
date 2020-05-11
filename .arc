@@ -1,5 +1,5 @@
 @app
-my-spa
+deno-ssr
 
 @static
 folder dist
