@@ -1,6 +1,6 @@
 import { render } from "./render.tsx";
 
-export async function handler() {
+export async function handler(req:object) {
   return {
     headers: {
       "content-type": "text/html; charset=utf8",
