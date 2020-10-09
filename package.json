@@ -9,7 +9,7 @@
     "start": "npm run build && sandbox"
   },
   "devDependencies": {
-    "@architect/sandbox": "^2.0.0",
+    "@architect/sandbox": "^3.0.3",
     "mkdirp": "^1.0.4"
   }
 }
