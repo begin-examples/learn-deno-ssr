@@ -1,7 +1,7 @@
-import Main from './main.js'
+import Main from "./main.js";
 
 export default function (state = {}) {
-  let { title } = state
+  let { title } = state;
   return `
 <!DOCTYPE html>
 <html>
@@ -21,5 +21,5 @@ export default function (state = {}) {
   <script src='_static/index.js'> </script>
  </body>
 </html>
-  `
+  `;
 }
