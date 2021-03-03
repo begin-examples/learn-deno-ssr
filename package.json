@@ -5,8 +5,7 @@
   "scripts": {
     "_test": "deno test test",
     "lint": "deno fmt src && deno fmt test",
-    "build": "mkdirp dist && deno bundle src/browser.tsx > dist/browser.js",
-    "start": "npm run build && sandbox"
+    "start": "npx arc sandbox"
   },
   "devDependencies": {
     "@architect/sandbox": "^3.1.3",
